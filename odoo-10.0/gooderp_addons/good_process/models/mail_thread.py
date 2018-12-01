@@ -163,15 +163,14 @@ class MailThread(models.AbstractModel):
         if not action_id:
             return True
         current_model = self.env['ir.actions.act_window'].browse(action_id).res_model
-        if current_model != self._name:
+        # 排除good_process.approver是因为从审批向导进去所有单据current_model != self._name导致跳过审批流程
+        if current_model != self._name and current_model != 'good_process.approver':
             return False
         else:
             return True
 
     @api.model
     def create(self, vals):
-        if not self.is_current_model():
-            return super(MailThread, self).create(vals)
         thread_row = super(MailThread, self).create(vals)
         approvers = self.__add_approver__(thread_row, self._name, thread_row.id)
         thread_row._approver_num = len(approvers)
@@ -198,6 +197,15 @@ class MailThread(models.AbstractModel):
                 continue
             change_state = vals.get('state', False)
 
+            if change_state == 'cancel':    # 作废时移除待审批人
+                if not len(th._to_approver_ids) and th._approver_num:
+                    raise ValidationError(u"已审批不可作废")
+                if len(th._to_approver_ids) < th._approver_num:
+                    raise ValidationError(u"审批中不可作废")
+                for approver in th._to_approver_ids:
+                    approver.unlink()
+                return super(MailThread, self).write(vals)
+
             # 已提交，确认时报错
             if len(th._to_approver_ids) == th._approver_num and change_state == 'done':
                 raise ValidationError(u"审批后才能确认")
@@ -211,7 +219,7 @@ class MailThread(models.AbstractModel):
                     })
             # 审批中，确认时报错，修改其他字段报错
             elif len(th._to_approver_ids) < th._approver_num:
-                if change_state:
+                if change_state == 'done':
                     raise ValidationError(u"审批后才能确认")
                 raise ValidationError(u"审批中不可修改")
 

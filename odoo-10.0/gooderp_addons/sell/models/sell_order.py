@@ -80,6 +80,12 @@ class SellOrder(models.Model):
             order.delivery_count = len([deli for deli in order.delivery_ids if not deli.is_return])
             order.return_count = len([deli for deli in order.delivery_ids if deli.is_return])
 
+    @api.one
+    @api.depends('line_ids.goods_id', 'line_ids.quantity')
+    def _compute_net_weight(self):
+        '''计算净重合计'''
+        self.net_weight = sum(line.goods_id.net_weight * line.quantity for line in self.line_ids)
+
     partner_id = fields.Many2one('partner', u'客户',
                                  ondelete='restrict', states=READONLY_STATES,
                                  help=u'签约合同的客户')
@@ -194,6 +200,8 @@ class SellOrder(models.Model):
         readonly=True,
         copy=False,
         help=u'输入预收款确认时产生的预收款单')
+    net_weight = fields.Float(
+        string=u'净重合计', compute='_compute_net_weight', store=True)
 
     @api.onchange('address_id')
     def onchange_partner_address(self):
@@ -273,6 +281,9 @@ class SellOrder(models.Model):
         if not self.line_ids:
             raise UserError(u'请输入商品明细行！')
         for line in self.line_ids:
+            # 检查属性是否填充，防止无权限人员不填就可以保存
+            if line.using_attribute and not line.attribute_id:
+                raise UserError(u'请输入商品：%s 的属性' % line.goods_id.name)
             if line.quantity <= 0 or line.price_taxed < 0:
                 raise UserError(u'商品 %s 的数量和含税单价不能小于0！' % line.goods_id.name)
             if line.tax_amount > 0 and self.currency_id:

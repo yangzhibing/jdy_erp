@@ -23,9 +23,7 @@ class SellReceiptWizard(models.TransientModel):
                            help=u'报表汇总的结束日期，默认为当前日期')
     c_category_id = fields.Many2one('core.category', u'客户类别',
                                     domain=[('type', '=', 'customer')],
-                                    context={'type': 'cu20.33'
-                                                     ''
-                                                     '0   stomer'},
+                                    context={'type': 'customer'},
                                     help=u'只统计选定的客户类别')
     partner_id = fields.Many2one('partner', u'客户',
                                  help=u'只统计选定的客户')

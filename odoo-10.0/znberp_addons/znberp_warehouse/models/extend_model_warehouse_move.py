@@ -20,5 +20,3 @@ class QcResultMore(models.Model):
     introduction = fields.Char(u'质检名称')
     qc_result_more = fields.Binary(u'质检报告',
                                    help=u'点击上传质检报告')
-
-

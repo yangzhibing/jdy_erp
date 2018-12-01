@@ -353,14 +353,12 @@ class SellDelivery(models.Model):
         line_ids = self.is_return and self.line_in_ids or self.line_out_ids
         for line in line_ids:   # 发货单/退货单明细
             cost = self.is_return and -line.cost or line.cost
-
-            if cost:  # 贷方明细
+            if not cost:
+                continue    # 缺货审核发货单时不产生出库凭证
+            else:  # 贷方明细
                 sum_amount += cost
                 self._create_voucher_line(line.goods_id.category_id.account_id,
                                           0, cost, voucher, line.goods_id, line.goods_qty)
-            else:
-                # 缺货审核发货单时不产生出库凭证
-                continue
         if sum_amount:  # 借方明细
             self._create_voucher_line(self.sell_move_id.finance_category_id.account_id,
                                       sum_amount, 0, voucher, False, 0)
@@ -448,14 +446,10 @@ class SellDelivery(models.Model):
                 voucher = record.create_voucher()
             # 发货单/退货单 生成结算单
             invoice_id = record._delivery_make_invoice()
-            record.write({
-                'voucher_id': voucher and voucher.id,
-                'invoice_id': invoice_id and invoice_id.id,
-                'state': 'done',    # 为保证审批流程顺畅，否则，未审批就可审核
-            })
             # 销售费用产生结算单
             record._sell_amount_to_invoice()
             # 生成收款单，并审核
+            money_order = False
             if record.receipt:
                 flag = not record.is_return and 1 or -1
                 amount = flag * (record.amount + record.partner_cost)
@@ -463,7 +457,13 @@ class SellDelivery(models.Model):
                 money_order = record._make_money_order(
                     invoice_id, amount, this_reconcile)
                 money_order.money_order_done()
-                self.money_order_id = money_order.id
+
+            record.write({
+                'voucher_id': voucher and voucher.id,
+                'invoice_id': invoice_id and invoice_id.id,
+                'money_order_id': money_order and money_order.id,
+                'state': 'done',  # 为保证审批流程顺畅，否则，未审批就可审核
+            })
 
             # 先收款后发货订单自动核销
             self.auto_reconcile_sell_order()

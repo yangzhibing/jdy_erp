@@ -189,6 +189,7 @@ class TestBuyOrder(TransactionCase):
         new_order = self.order.copy()
         for line in new_order.line_ids:
             line.goods_id = self.env.ref('goods.mouse').id
+            line.lot = 'mouse001'
             new_order.buy_generate_receipt()
         receipt = self.env['buy.receipt'].search(
             [('order_id', '=', new_order.id)])
@@ -293,6 +294,12 @@ class TestBuyOrder(TransactionCase):
             line.goods_qty = 1
         receipt.buy_receipt_done()
         self.order.action_view_receipt()
+
+    def test_buy_order_done_no_attribute(self):
+        '''检查属性是否填充'''
+        self.order.line_ids[0].attribute_id = False
+        with self.assertRaises(UserError):
+            self.order.buy_order_done()
 
 
 class TestBuyOrderLine(TransactionCase):

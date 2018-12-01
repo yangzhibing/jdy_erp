@@ -23,7 +23,8 @@ from odoo.exceptions import UserError, ValidationError
 import odoo.addons.decimal_precision as dp
 from odoo import fields, models, api
 from odoo.tools import float_compare, float_is_zero
-from datetime import datetime
+import datetime
+#from datetime import datetime
 
 
 class MoneyOrder(models.Model):
@@ -232,7 +233,8 @@ class MoneyOrder(models.Model):
         :return:
         """
         invoice_search_list = [('partner_id', '=', self.partner_id.id),
-                               ('to_reconcile', '!=', 0)]
+                               ('to_reconcile', '!=', 0),
+                               ('state', '=', 'done')]
         if self.env.context.get('type') == 'get':
             invoice_search_list.append(('category_id.type', '=', 'income'))
         else:  # type = 'pay':
@@ -255,8 +257,7 @@ class MoneyOrder(models.Model):
 
         for invoice in self.env['money.invoice'].search(self._get_invoice_search_list()):
             source_lines.append(self._get_source_line(invoice))
-        if source_lines:
-            self.source_ids = source_lines
+        self.source_ids = source_lines
 
     @api.multi
     def money_order_done(self):
@@ -617,8 +618,8 @@ class MoneyInvoice(models.Model):
         计算逾期金额： 逾期时等于未核销金额，否则为0
         :return: 逾期天数
         """
-        d1 = datetime.strptime(fields.Date.context_today(self), '%Y-%m-%d')
-        d2 = self.date_due and datetime.strptime(
+        d1 = datetime.datetime.strptime(fields.Date.context_today(self), '%Y-%m-%d')
+        d2 = self.date_due and datetime.datetime.strptime(
             self.date_due, '%Y-%m-%d') or d1
         day = (d1 - d2).days
         self.overdue_days = day > 0 and day or 0.0
@@ -701,8 +702,11 @@ class MoneyInvoice(models.Model):
             inv.reconciled = 0.0
             inv.to_reconcile = inv.amount
             inv.state = 'done'
-            if not inv.date_due:
-                inv.date_due = fields.Date.context_today(self)
+            #默认到期日取审核日期
+            #不管有没有到期日，取发票审核日期+客户的信用天数
+            #if not inv.date_due:
+            #    inv.date_due = fields.Date.context_today(self) + inv.partner_id.credit_time
+            inv.date_due = datetime.datetime.strptime(fields.Date.context_today(self), '%Y-%m-%d') + datetime.timedelta(days=inv.partner_id.credit_time)
             if inv.category_id.type == 'income':
                 inv.partner_id.receivable += inv.amount
             if inv.category_id.type == 'expense':
@@ -1072,6 +1076,20 @@ class ReconcileOrder(models.Model):
                 to_invoice_id.to_reconcile = 0
                 to_invoice_id.reconciled = -line.this_reconcile
 
+        # 应收冲应付，应收行、应付行分别生成负的结算单，并且核销
+        if business_type in ['get_to_pay']:
+            if not float_is_zero(line.this_reconcile, 2):
+                invoice_id = self.env['money.invoice'].create({
+                    'name': name,
+                    'category_id': line.category_id.id,
+                    'amount': -line.this_reconcile,
+                    'date': self.date,
+                    'date_due': line.date_due,
+                    'partner_id': partner_id.id,
+                })
+                # 核销 业务伙伴 的本次核销金额
+                invoice_id.to_reconcile = 0
+                invoice_id.reconciled = -line.this_reconcile
         return True
 
     @api.multi
@@ -1132,11 +1150,12 @@ class ReconcileOrder(models.Model):
         line.name.to_reconcile += line.this_reconcile
         line.name.reconciled -= line.this_reconcile
 
-        # 应收转应收、应付转应付，找到生成的结算单反审核并删除
-        if business_type in ['get_to_get', 'pay_to_pay']:
+        # 应收转应收、应付转应付、应收冲应付，找到生成的结算单反审核并删除
+        if business_type in ['get_to_get', 'pay_to_pay', 'get_to_pay']:
             invoices = self.env['money.invoice'].search([('name', '=', name)])
             for inv in invoices:
-                inv.money_invoice_draft()
+                if inv.state == 'done':
+                    inv.money_invoice_draft()
                 inv.unlink()
         return True
 

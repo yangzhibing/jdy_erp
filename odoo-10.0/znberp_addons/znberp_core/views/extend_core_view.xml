@@ -10,9 +10,6 @@
                 <field name="bank_name" position='before'>
                     <field name="bank_user_name"/>
                 </field>
-                <field name="tag_ids" position='replace'>
-                    <field name="c_tag_ids" widget="many2many_tags"/>
-                </field>
             </field>
         </record>
 
@@ -27,9 +24,6 @@
                 </field>
                 <field name="bank_name" position='before'>
                     <field name="bank_user_name"/>
-                </field>
-                <field name="tag_ids" position='replace'>
-                    <field name="s_tag_ids" widget="many2many_tags"/>
                 </field>
             </field>
         </record>

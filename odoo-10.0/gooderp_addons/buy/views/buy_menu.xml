@@ -1,16 +1,6 @@
 <?xml version="1.0"?>
 <openerp>
     <data>
-
-
-		<record id='goods_action_buy' model='ir.actions.act_window'>
-			<field name='name'>商品</field>
-			<field name='res_model'>goods</field>
-			<field name='view_mode'>tree,form</field>
-			<field name='view_id' ref='goods.goods_tree' />
-			<field name="domain">[('not_buyable','=',False)]</field>
-		</record>
-
     	<!-- 根菜单 -->
         <menuitem id="menu_buy_root" name="采购" groups='group_buy' web_icon="buy,static/description/icon.png"/>
 
@@ -37,7 +27,7 @@
 		<!-- 采购主数据 -->
 		<menuitem id="menu_buy_master" name="主数据" parent="menu_buy_root" sequence="2"/>
         <menuitem id='buy_vendor_menu' action='core.vendor_action' name="供应商" parent='menu_buy_master' sequence='10'/>
-		<menuitem id='buy_goods_menu' name='商品' parent='menu_buy_master' action='goods_action_buy' sequence='20' />
+		<menuitem id='buy_goods_menu' name='商品' parent='menu_buy_master' action='goods.goods_action' sequence='20' />
         <record id="buy_goods_menu" model="ir.ui.menu">
 			<field name="create_tag">1</field>
 		</record>

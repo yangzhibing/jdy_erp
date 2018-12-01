@@ -219,6 +219,18 @@ class TestSellOrder(TransactionCase):
         self.return_order.action_view_return()
         self.assertTrue(self.return_order.return_count == 2)
 
+    def test_sell_order_done_no_attribute(self):
+        '''检查属性是否填充'''
+        self.order.line_ids[0].goods_id = self.env.ref('goods.keyboard')
+        with self.assertRaises(UserError):
+            self.order.sell_order_done()
+
+    def test_compute_net_weight(self):
+        '''计算净重合计'''
+        self.env.ref('goods.mouse').net_weight = 50
+        self.order.line_ids[0].quantity = 10
+        self.assertEqual(self.order.net_weight, 50 * 10)
+
 
 class TestSellOrderLine(TransactionCase):
 
