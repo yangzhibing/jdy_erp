@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_znberp_warehouse_qc_result_more,access_znberp_warehouse__qc_result_more,model_qc_result_more,,1,1,1,1

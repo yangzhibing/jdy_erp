@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+		<!--继承客户form，添加默认联系人，在默认地址前面2018/11/13杨志兵添加-->
+        <record id="customer_address_form_inherit" model="ir.ui.view">
+            <field name="name">customer_address_form_inherit</field>
+            <field name="model">partner</field>
+            <field name='inherit_id' ref='core.customer_address_form' />
+            <field name="arch" type="xml">
+                <field name="address" position="before">
+                    <field name="contact"/>
+                </field>
+
+            </field>
+        </record>
+    </data>
+</odoo>

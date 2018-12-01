@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="extend_sell_delivery_form" model="ir.ui.view">
+            <field name="name">extend.sell.delivery.form</field>
+            <field name="model">sell.delivery</field>
+            <field name="inherit_id" ref="sell.sell_delivery_form"/>
+            <field name="arch" type="xml">
+                <field name='qc_result' position="replace">
+                    <field name='qc_result'
+                           attrs="{'readonly': [('state', '!=', 'draft')]}"
+                           groups='warehouse.group_qc'>
+                        <tree string="质检报告" create="true">
+                            <field name="name"/>
+                            <field name="introduction"></field>
+                            <field name="qc_result_more"/>
+                        </tree>
+                    </field>
+                </field>
+            </field>
+        </record>
+
+        <record id="extend_sell_return_form" model="ir.ui.view">
+            <field name="name">extend.sell.return.form</field>
+            <field name="model">sell.delivery</field>
+            <field name="inherit_id" ref="sell.sell_return_form"/>
+            <field name="arch" type="xml">
+                <field name='qc_result' position="replace">
+                    <field name='qc_result'
+                           attrs="{'readonly': [('state', '!=', 'draft')]}"
+                           groups='warehouse.group_qc'>
+                        <tree string="质检报告" create="true">
+                            <field name="name"/>
+                            <field name="introduction"></field>
+                            <field name="qc_result_more"/>
+                        </tree>
+                    </field>
+                </field>
+            </field>
+        </record>
+
+
+
+
+
+        <!--2018.11.24杨志兵添加销售订单辅助单位和辅助数量-->
+        <!--<record id="extend_sell_order_form" model="ir.ui.view">-->
+        	<!--<field name="name">extend.sell.order.form</field>-->
+        	<!--<field name="model">sell.order</field>-->
+            <!--<field name="inherit_id" ref="sell.sell_order_form"/>-->
+        	<!--<field name="arch" type="xml">-->
+            <!--<xpath expr="//form/sheet/notebook/page/field[@name='line_ids']/tree/field[@name='uom_id']"-->
+                   <!--position="after">-->
+                <!--<field name="uom_id"/>-->
+            <!--</xpath>-->
+            <!--</field>-->
+        <!--</record>-->
+    </data>
+</odoo>

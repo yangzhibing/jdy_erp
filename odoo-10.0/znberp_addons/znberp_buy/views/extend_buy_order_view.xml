@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="extend_buy_order_search" model="ir.ui.view">
+            <field name="name">extend.buy.order.search</field>
+            <field name="model">buy.order</field>
+            <field name="inherit_id" ref="buy.buy_order_search"/>
+            <field name="arch" type="xml">
+                <field name="approve_uid" position="after">
+                    <field name="amount"/>
+                    <field name="paid_amount"/>
+                </field>
+                <filter name="createby" position="before">
+                    <filter name="money_not_same" string="付款未完成" domain="[('amount','=',paid_amount)]"/>
+                </filter>
+            </field>
+        </record>
+    </data>
+</odoo>

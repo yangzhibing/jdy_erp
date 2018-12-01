@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="extend_partner_address_supplier_address_form_inherit" model="ir.ui.view">
+            <field name="name">extend.partner.address.supplier.address.form.inherit</field>
+            <field name="model">partner</field>
+            <field name="inherit_id" ref="buy.partner_address_supplier_address_form_inherit"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="企业资质">
+                        <group string="PDF文件">
+                            <field name="partner_qualification_lines">
+                                <tree string="企业资质明细" create="true">
+                                    <field name="name"/>
+                                    <field name="introduction"/>
+                                    <field name="partner_qualification"/>
+                                </tree>
+                            </field>
+                        </group>
+                        <group string="图片文件">
+                            <field name="partner_qualification_image_lines">
+                                <tree string="企业资质明细" create="true">
+                                    <field name="name"/>
+                                    <field name="introduction"/>
+                                    <field name="partner_qualification"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+
+        <!--2018年5月17号 张宁波添加,editable="bottom"-->
+        <record id="partner_qualification_lines_form_view" model="ir.ui.view">
+            <field name="name">partner.qualification.line.form</field>
+            <field name="model">partner.qualification.line</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group name="group_left">
+                                <field name="name"></field>
+                                <field name="introduction"/>
+                            </group>
+                            <group name="group_right">
+                            </group>
+                        </group>
+                        <group>
+                            <field name="partner_qualification" widget="pdf_viewer"></field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!--2018年5月17号 张宁波添加,editable="bottom"-->
+        <record id="partner_qualification_image_lines_form_view" model="ir.ui.view">
+            <field name="name">partner.qualification.image.line.form</field>
+            <field name="model">partner.qualification.image.line</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group name="group_left">
+                                <field name="name"></field>
+                                <field name="introduction"/>
+                            </group>
+                            <group name="group_right">
+                            </group>
+                        </group>
+                        <group>
+                            <field name="partner_qualification" widget="image"></field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

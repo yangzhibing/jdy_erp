@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!--客户， 菜单放在资金和销售模块下-->
+        <record id="extend_customer_address_form" model="ir.ui.view">
+            <field name="name">extend.customer.address.form</field>
+            <field name="model">partner</field>
+            <field name="inherit_id" ref="core.customer_address_form"/>
+            <field name="arch" type="xml">
+                <field name="bank_name" position='before'>
+                    <field name="bank_user_name"/>
+                </field>
+                <field name="tag_ids" position='replace'>
+                    <field name="c_tag_ids" widget="many2many_tags"/>
+                </field>
+            </field>
+        </record>
+
+        <!--供应商 菜单放在采购模块下-->
+        <record id="extend_supplier_address_form" model="ir.ui.view">
+            <field name="name">extend.supplier.address.form</field>
+            <field name="model">partner</field>
+            <field name="inherit_id" ref="core.supplier_address_form"/>
+            <field name="arch" type="xml">
+                 <field name="main_contact" position='replace'>
+                    <field name="main_producer"/>
+                </field>
+                <field name="bank_name" position='before'>
+                    <field name="bank_user_name"/>
+                </field>
+                <field name="tag_ids" position='replace'>
+                    <field name="s_tag_ids" widget="many2many_tags"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

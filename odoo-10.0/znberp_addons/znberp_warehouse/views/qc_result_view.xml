@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!--2018年7月19号 张宁波添加,editable="bottom"-->
+        <record id="qc_result_form_view" model="ir.ui.view">
+            <field name="name">qc.result.form</field>
+            <field name="model">qc.result.more</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group name="group_left">
+                                <field name="name"></field>
+                                <field name="introduction"></field>
+                            </group>
+                            <group name="group_right">
+                            </group>
+                        </group>
+                        <group>
+                            <field name="qc_result_more"></field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

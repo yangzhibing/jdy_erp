@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--教室-->
+            <record model="ir.ui.view" id="my_training_classroom_from_view">
+            <field name="name">教室</field>
+            <field name="type">form</field>
+            <field name="model">my.training.classroom</field>
+            <field name="arch" type="xml">
+                <form string="教室表单">
+                    <field name="number"/>
+                    <field name="capacity"/>
+                    <field name="location" />
+                </form>
+            </field>
+        </record>
+         <!--定义列表视图-->
+        <record model="ir.ui.view" id="my_training_classroom_tree_view">
+            <field name="name">教室列表</field>
+            <field name="type">tree</field>
+            <field name="model">my.training.classroom</field>
+            <field name="arch" type="xml">
+                <tree string="教室列表">
+                    <field name="number"/>
+                    <field name="capacity" />
+                    <field name="location" />
+                </tree>
+            </field>
+        </record>
+<!--定义视图动作-->
+    <record model="ir.actions.act_window"  id="action_my_training_classroom">
+        <field name="name">教室</field>
+        <field name="res_model">my.training.classroom</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form,tree</field>
+        <field name="view_id" ref="my_training_classroom_tree_view"/>
+    </record>
+<!--定义菜单-->
+        <menuitem id="my_training_classroom_menu" name="教室" parent="my_training.my_training_menu" action="action_my_training_classroom"/>
+    </data>
+</openerp>

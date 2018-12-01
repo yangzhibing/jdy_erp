@@ -1,0 +1,17 @@
+<?xml versi>on="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--教室-->
+            <record model="ir.ui.view" id="my_training_lesson_from_inherit_classroom_view">
+            <field name="name">课程教室继承视图</field>
+            <field name="type">form</field>
+            <field name="model">my.training.lesson</field>
+            <field name="inherit_id" ref="my_training.my_training_lesson_from_view"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="classroom_id"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="extend_buy_receipt_form" model="ir.ui.view">
+            <field name="name">extend.buy.receipt.form</field>
+            <field name="model">buy.receipt</field>
+            <field name="inherit_id" ref="buy.buy_receipt_form"/>
+            <field name="arch" type="xml">
+                <field name='qc_result' position="replace">
+                    <field name='qc_result'
+                           attrs="{'readonly': [('state', '!=', 'draft')]}"
+                           groups='warehouse.group_qc'>
+                        <tree string="质检报告" create="true">
+                            <field name="name"/>
+                            <field name="introduction"></field>
+                            <field name="qc_result_more"/>
+                        </tree>
+                    </field>
+                </field>
+            </field>
+        </record>
+
+        <record id="extend_buy_return_form" model="ir.ui.view">
+            <field name="name">extend.buy.return.form</field>
+            <field name="model">buy.receipt</field>
+            <field name="inherit_id" ref="buy.buy_return_form"/>
+            <field name="arch" type="xml">
+                <field name='qc_result' position="replace">
+                    <field name='qc_result'
+                           attrs="{'readonly': [('state', '!=', 'draft')]}"
+                           groups='warehouse.group_qc'>
+                        <tree string="质检报告" create="true">
+                            <field name="name"/>
+                            <field name="introduction"></field>
+                            <field name="qc_result_more"/>
+                        </tree>
+                    </field>
+                </field>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>
