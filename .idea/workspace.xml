@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="521e5496-60c8-486d-8b07-03a12dd98228" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/template/buy.adjust.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/template/buy.adjust.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/template/buy.order.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/template/buy.order.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/template/buy.receipt.in.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/template/buy.receipt.in.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/template/buy.receipt.out.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/template/buy.receipt.out.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/template/buy_order.xls" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/template/buy_order.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/template/buy_receipt_in.xls" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/template/buy_receipt_in.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/customer.statements.report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/customer.statements.report.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/money.order.get.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/money.order.get.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/money.order.pay.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/money.order.pay.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/money.transfer.order.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/money.transfer.order.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/other.money.order.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/other.money.order.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/reconcile.order.advance.get.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/reconcile.order.advance.get.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/reconcile.order.advance.pay.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/reconcile.order.advance.pay.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/reconcile.order.getToget.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/reconcile.order.getToget.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/reconcile.order.getTopay.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/reconcile.order.getTopay.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/reconcile.order.payTopay.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/reconcile.order.payTopay.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/supplier.statements.report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/template/supplier.statements.report.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/template/sell.adjust.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/template/sell.adjust.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/template/sell.delivery.in.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/template/sell.delivery.in.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/template/sell.delivery.out.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/template/sell.delivery.out.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/template/sell.order.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/template/sell.order.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/template/wh.assembly.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/template/wh.assembly.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/template/wh.disassembly.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/template/wh.disassembly.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/template/wh.in.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/template/wh.in.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/template/wh.internal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/template/wh.internal.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/template/wh.out.docx" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/template/wh.out.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/__openerp__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/controllers/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/controllers/handlers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/controllers/handlers/auto_reply.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/controllers/handlers/event_handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/controllers/handlers/menu_click.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/controllers/handlers/sys_event.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/controllers/handlers/text_handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/controllers/routes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/controllers/wx_handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/data/wx_init_data.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/optionaldict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/card.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/customservice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/datacube.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/device.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/group.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/jsapi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/material.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/media.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/merchant/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/merchant/category.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/merchant/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/merchant/express.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/merchant/group.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/merchant/order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/merchant/shelf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/merchant/stock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/message.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/poi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/qrcode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/semantic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/shakearound.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/template.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/api/wifi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/client/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/component.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/crypto/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/crypto/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/crypto/cryptography.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/crypto/pkcs7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/crypto/pycrypto.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/agent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/batch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/chat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/department.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/jsapi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/material.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/media.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/message.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/oauth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/service.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/shakearound.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/tag.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/client/api/user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/crypto.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/events.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/messages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/enterprise/replies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/events.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/fields.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/messages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/oauth/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/pay/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/pay/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/pay/api/coupon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/pay/api/jsapi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/pay/api/micropay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/pay/api/order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/pay/api/redpack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/pay/api/refund.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/pay/api/tools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/pay/api/transfer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/pay/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/pay/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/replies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/session/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/session/memcachedstorage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/session/memorystorage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/session/redisstorage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/session/shovestorage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/wechatpy/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/logger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/messages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/reply.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/robot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/session/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/session/filestorage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/session/memorystorage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/session/mongodbstorage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/session/redisstorage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/testing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/werobot/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/ext_libs/xmltodict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/models/corpuser_uuid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/models/livechat_channel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/models/menu_about_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/models/reply_about_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/models/res_partner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/models/user_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/models/wx_autoreply_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/models/wx_config_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/models/wx_confirm_wizard.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/models/wxuser_uuid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/rpc/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/rpc/corp_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/security/ir.model.access.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/security/res_groups.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/static/description/2016-01-17_234224.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/static/description/2016-01-17_234349.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/static/description/2016-01-18_003937.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/static/description/2016-01-18_163310.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/static/description/2016-01-18_183011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/static/description/2016-01-18_200713.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/static/description/for_odoo_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/static/description/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/parent_menus.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/res_partner_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_action_act_article_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_action_act_custom_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_action_act_text_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_articlesreply_article_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_autoreply_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_config_corpsettings_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_config_settings_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_confirm_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_corpuser_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_menu_item_left_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_menu_item_middle_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_menu_item_right_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_menu_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_user_group_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/oejia_wx/views/wx_user_views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_buy/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_buy/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_core/models/extend_model_partner.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_core/models/extend_model_partner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_goods/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_goods/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_uuc/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_uuc/__manifest__.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/jdy_ERP$odoo_bin.coverage" NAME="odoo-bin Coverage Results" MODIFIED="1533637370440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/odoo-10.0" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="mail_thread.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/good_process/models/mail_thread.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1100">
+              <caret line="228" column="14" selection-start-line="228" selection-start-column="14" selection-end-line="228" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dp.get_precision</find>
+      <find>_compute_uom_uos</find>
+      <find>uos_id</find>
+      <find>auxiliary_unit_groups</find>
+      <find>_get_goods_uos_qty</find>
+      <find>sell_move_id</find>
+      <find>_inverse_goods_qty</find>
+      <find>sell_order_line</find>
+      <find>SellOrderLine</find>
+      <find>price_taxed</find>
+      <find>quotation_line_id</find>
+      <find>出库类型的</find>
+      <find>mail.thread</find>
+      <find>goods_uos_qty</find>
+      <find>line</find>
+      <find>sell.order.line</find>
+      <find>location</find>
+      <find>location_id</find>
+      <find>uom</find>
+      <find>数量合计</find>
+      <find>goods_action</find>
+      <find>商品</find>
+      <find>obj.partner_id</find>
+      <find>待审批</find>
+      <find>th._approver_num</find>
+      <find>goto</find>
+      <find>oe_highlight</find>
+      <find>false</find>
+      <find>model_type</find>
+      <find>type</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/odoo-10.0/znberp_addons/web_responsive</dir>
+      <dir>$PROJECT_DIR$/odoo-10.0/znberp_addons/web_responsive/views</dir>
+      <dir>$PROJECT_DIR$/odoo-10.0/znberp_addons</dir>
+      <dir>$PROJECT_DIR$/odoo-10.0/gooderp_addons</dir>
+      <dir>$PROJECT_DIR$/odoo-10.0</dir>
+      <dir>$PROJECT_DIR$/odoo-10.0/znberp_addons/dingtalk</dir>
+      <dir>$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/odoo-dingtalk-master/__init__.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/dingtalk/__manifest__.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/website china features/static/description/index.html" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/auth dingtalk/helper/ding_helper.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/auth dingtalk/models/models.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/auth dingtalk/views/ding_login.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/web_gansu/views/views.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/web_gansu/__manifest__.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/web_gansu/models/models.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/web_gansu/security/ir.model.access.csv" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/web_gansu/demo/demo.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/web_gansu/controllers/controllers.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/web_gansu/views/templates.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/academy/models/models.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/academy/security/ir.model.access.csv" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/academy/demo/demo.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/academy/controllers/controllers.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/academy/views/templates.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/academy/__manifest__.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/theme_gansu/__manifest__.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/odoo/http.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_partner_address/controllers/__init__.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_partner_address/controllers/controllers.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_partner_address/models/__init__.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_partner_address/security/ir.model.access.csv" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_partner_address/__manifest__.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_partner_address/views/extend_partner_address.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_partner_address/models/extend_model_partner_address.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/wizard/sell_receipt_wizard.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/gooderp_addons/core/views/core_view.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/gooderp_addons/core/models/partner.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_core/views/extend_core_view.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_core/models/extend_model_partner.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/views/vendor_goods_view.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/gooderp_addons/goods/action/goods_action.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_buy/views/extend_buy_menu.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_goods/action/extend_goods_action.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_buy/__manifest__.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/views/buy_menu.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/models/sell_order.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_sell/models/extend_model_models.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/models/warehouse_move.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_warehouse/models/extend_model_warehouse_move.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell_quotation/views/sell_quotation_view.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/views/sell_view.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_sell/models/__init__.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_sell/views/extend_sell_view.xml" />
+        <option value="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_sell/models/extend_model_sell_order.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/odoo.conf" />
+        <option value="$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/models/warehouse_move_line.py" />
+        <option value="$PROJECT_DIR$/odoo-10.0/gooderp_addons/good_process/views/good_process.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/odoo-10.0/addons/pad/static/plugin/ep_disable_init_focus/package.json" />
+      <path value="$PROJECT_DIR$/odoo-10.0/addons/web/package.json" />
+      <path value="$PROJECT_DIR$/odoo-10.0/addons/web/static/lib/es5-shim/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="189" />
+    <option name="y" value="84" />
+    <option name="width" value="2051" />
+    <option name="height" value="1288" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jdy_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdy_ERP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdy_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdy_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo-10.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdy_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdy_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo-10.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gooderp_addons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdy_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdy_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo-10.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gooderp_addons" type="462c0819:PsiDirectoryNode" />
+              <item name="money" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdy_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdy_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo-10.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gooderp_addons" type="462c0819:PsiDirectoryNode" />
+              <item name="money" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_partner_address/views" />
+      <recent name="$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_partner_address/demo" />
+      <recent name="$PROJECT_DIR$/odoo-10.0/znberp_addons" />
+      <recent name="$PROJECT_DIR$/odoo-10.0" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="jdy_ERP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../anaconda3/envs/odoo10/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="521e5496-60c8-486d-8b07-03a12dd98228" name="Default" comment="" />
+      <created>1528112431313</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528112431313</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="189" y="84" width="2051" height="1288" extended-state="0" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49958983" weight="0.32820514" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5004102" side_tool="true" weight="0.32968882" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32820514" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995948" weight="0.32222223" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.31965813" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16674963" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39949536" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32893774" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_partner_address/views/extend_partner_address.xml" />
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/debian/odoo.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="19" lean-forward="true" selection-start-column="1" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/odoo.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_partner_address/models/extend_model_partner_address.py" />
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/addons/stock/models/stock_location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/tests/test_sell_delivery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/models/sell_delivery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="626" column="29" selection-start-line="626" selection-start-column="29" selection-end-line="626" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_warehouse/views/templates.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_warehouse/models/extend_model_goods.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_uuc/models/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_uuc/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_goods/views/templates.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_sell/models/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_warehouse/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_buy/models/extend_model_buy_order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-335" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_buy/views/extend_vendor_goods_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-770" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_sell/views/extend_sell_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_uuc/views/views.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_goods/models/extend_model_goods.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_goods/controllers/controllers.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_core/views/extend_core_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_buy/views/extend_buy_receipt_view.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_warehouse/views/extend_production_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_warehouse/views/extend_warehouse_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-638" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_warehouse/views/qc_result_view.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/views/buy_action.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/views/buy_receipt_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8074" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/views/vendor_goods_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-836" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/core/views/core_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10874" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_buy/views/extend_buy_order_view.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/views/buy_order_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3234" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/views/buy_adjust_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-963" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/znberp_addons/znberp_core/models/extend_model_partner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/buy/views/buy_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" column="99" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/report/money_get_pay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/report/customer_statements_view.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/money/report/customer_statements.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-585" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/staff_wages/demo/staff_wages_demo.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/staff_hire/views/hire_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2321" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/staff_hire/views/staff_job_view.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/web_sublist/views/assets_backend.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/views/sell_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/models/warehouse_move_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="802">
+          <caret line="154" column="42" lean-forward="true" selection-start-line="154" selection-start-column="42" selection-end-line="154" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/warehouse/models/warehouse_move.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="396" column="38" selection-start-line="396" selection-start-column="38" selection-end-line="396" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/addons/mail/views/res_partner_views.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="31" column="77" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/good_process/views/good_process.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1210">
+          <caret line="55" column="47" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/sell/models/sell_order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="42" lean-forward="true" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/good_process/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/goods/models/goods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1618" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo-10.0/gooderp_addons/good_process/models/mail_thread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="228" column="14" selection-start-line="228" selection-start-column="14" selection-end-line="228" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

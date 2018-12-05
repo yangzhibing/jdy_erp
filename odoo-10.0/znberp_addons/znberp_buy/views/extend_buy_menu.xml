@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <!--采购_主数据_商品-->
+		<menuitem id='buy.buy_goods_menu' name='商品' parent='buy.menu_buy_master' action='znberp_goods.buy_goods_action' sequence='20' />
+	</data>
+</openerp>
