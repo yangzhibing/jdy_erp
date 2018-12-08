@@ -20,6 +20,7 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
+        'action/extend_goods_action.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode

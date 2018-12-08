@@ -19,13 +19,14 @@
     # any module necessary for this one to work correctly
     'depends': ['base',
                 'znberp_core',
-                'znberp_buy',
-                'znberp_sell',
-                'znberp_goods',
                 'znberp_money',
                 'znberp_warehouse',
+                'znberp_goods',
+                'znberp_buy',
+                'znberp_sell',
                 'web_responsive',
                 'fixed_header',
+                'znberp_partner_address',
                 ],
 
     # always loaded

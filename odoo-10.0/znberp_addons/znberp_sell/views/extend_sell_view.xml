@@ -1,6 +1,18 @@
 <?xml version="1.0"?>
 <odoo>
     <data>
+          <record id="extend_sell_order_form" model="ir.ui.view">
+            <field name="name">extend.sell.order.form</field>
+            <field name="model">sell.order</field>
+            <field name="inherit_id" ref="sell.sell_order_form"/>
+            <field name="arch" type="xml">
+                <field name='uom_id' position="after">
+                    <field name='uos_qty'/>
+                    <field name='uos_id'/>
+                </field>
+            </field>
+        </record>
+
         <record id="extend_sell_delivery_form" model="ir.ui.view">
             <field name="name">extend.sell.delivery.form</field>
             <field name="model">sell.delivery</field>

@@ -9,11 +9,21 @@ class Partner(models.Model):
     # 添加字段：“生产商”
     main_producer = fields.Char(u'生产商')
 
+    # 添加字段：“收货人”
+    main_producer = fields.Char(u'生产商')
+
     # 开户行上面加上一行：‘户名’
     bank_user_name = fields.Char(u'户名')
 
     # 字段“税务登记号”修改为“统一社会信用代码”
     tax_num = fields.Char(u'统一社会信用代码')
+
+    # 标签修改:代理品牌
+    tag_ids = fields.Many2many('core.value',
+                               ondelete='restrict',
+                               string=u'代理品牌',
+                               domain=[('type', '=', 'partner_tag')],
+                               context={'type': 'partner_tag'})
 
     # 企业资质文件形式图片格式，PDF, 及其他常规文档均可支持上传，可支持多张上传，支持压缩包。
     partner_qualification_lines = fields.One2many('partner.qualification.line', 'partner_id',
