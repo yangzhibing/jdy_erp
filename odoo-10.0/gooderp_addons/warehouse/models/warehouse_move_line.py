@@ -175,7 +175,7 @@ class WhMoveLine(models.Model):
                              default=1,
                              required=True,
                              help=u'商品的数量')
-    goods_uos_qty = fields.Float(u'辅助数量', digits=dp.get_precision('Quantity'),
+    goods_uos_qty = fields.Float(u'辅助数量', digits=dp.get_precision('goods_uos_qty'),
                                  compute=_get_goods_uos_qty, inverse=_inverse_goods_qty, store=True,
                                  help=u'商品的辅助数量')
 

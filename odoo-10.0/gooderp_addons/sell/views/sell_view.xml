@@ -824,6 +824,8 @@
             </field>
         </record>
 
+
+
     	<!--根菜单-->
         <menuitem id='sell_menu' name='销货' groups='sell.group_sell' web_icon="sell,static/description/icon.png"/>
     	<menuitem id='sell_order_menu_root' name='销货' parent='sell_menu' sequence="1"/>
